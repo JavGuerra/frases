@@ -1,0 +1,33 @@
+{
+  "name": "Frases ALIBER",
+  "short_name": "Frases",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
+  "theme_color": "#CCCCCC",
+  "background_color": "#0192DC",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "default_locale": "es",
+  "locales": {
+    "es": {
+      "description": "Píldoras sobre EE.RR. de ALIBER",
+      "developer": {
+        "name": "Alianza Iberoamericana de Enfermedades Raras",
+        "url": "http://aliber.org"
+      }
+    },
+    "pt": {
+      "description": "Pills sobre EE.RR. de ALIBER",
+      "developer": {
+        "name": "Aliança Ibero Americana de Doenças Raras",
+        "url": "http://aliber.org/web/pt"
+      }
+    }
+  }
+}

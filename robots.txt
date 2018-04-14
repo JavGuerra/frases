@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /quotes/
+Disallow: /404.html
