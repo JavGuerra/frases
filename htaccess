@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Sirviendo pagina de error 404 personalizada
+ErrorDocument 404 /404.html
+
+# Añadiendo tipo para WebApp
+AddType application/x-web-app-manifest+json .webapp
+AddHandler x-web-app-manifest+json .webapp
+
+# Denegando acceso a robots maliciosos
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^Anarchie [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ASPSeek [OR]
+RewriteCond %{HTTP_USER_AGENT} ^attach [OR]
+RewriteCond %{HTTP_USER_AGENT} ^autoemailspider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xenu [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus.*Webster [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.* - [F,L]
